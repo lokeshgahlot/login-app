@@ -1,9 +1,3 @@
-// 1 - Has a single javascript file as the entrypoint into the application
-// 2 - Handles Javascript/ES6/React code with both .js and .jsx file extensions; should output a single ES5 .js bundle with a unique hash added to the filename.
-// 3 - Handles SCSS code with .scss extensions; should output a single .css file with a unique hash added to the filename.
-// 4 - Handles IMG file with .jpeg, .jpg, .png, and .gif extensions; should return a link referencing the file
-// 5 - Handles SVG file with .svg extension; return a base-64 data-encoded string if the file is < 1mb and a link to the file otherwise
-
 const webpack = require("webpack");
 const path = require("path");
 
@@ -29,19 +23,22 @@ const fileLoaderOptions = {
 }
 
 module.exports = {
-    entry: path.join(__dirname, "src/App.js"), // 1, application entrypoint 
+    entry: path.join(__dirname, "src/index.js"), // application entrypoint 
+    devServer: {
+      historyApiFallback: true
+    },
     output: {
         path: path.join(__dirname, "public"),
-        filename: "bundle.[chunkhash].js" // 2, chunkhash, for unique hash
+        filename: "bundle.[chunkhash].js" // chunkhash, for unique hash
     },
     module: {
         rules:[
             { //  2, Handles Javascript/ES6/React code 
-                test: /\.(js|jsx)$/, // 2, Handles js and jsx extensions
+                test: /\.(js|jsx)$/,
                 loader: "babel-loader", 
                 exclude: /node_modules/
             },
-            {  //3,  Handles SCSS code with .scss extensions
+            {
                 test: /\.scss$/,
                     use: ExtractTextPlugin.extract({
                     fallback: 'style-loader',
@@ -52,7 +49,7 @@ module.exports = {
                 }),
             },
             {
-                test: /\.(png|jpg|jpeg|gif)$/, // 4, Handles IMG file with .jpeg, .jpg, .png, and .gif
+                test: /\.(png|jpg|jpeg|gif)$/, //Handles IMG file with .jpeg, .jpg, .png, and .gif
                 use: [
                         {
                             loader: 'file-loader',
@@ -63,12 +60,12 @@ module.exports = {
                 ]
             },
             {
-                test: /\.(svg)$/,  // 5, Handles SVG file
+                test: /\.(svg)$/,  // Handles SVG file, 
                 use: [
                     {
                         loader: 'url-loader',
                         options: {
-                            limit: 1000000, // 1 megabyte
+                            limit: 1000000, // 1 megabyte, If SVG more than 1 MB, It creates as URL
                             fallback: 'file-loader',
                             ...fileLoaderOptions
                         }
@@ -79,9 +76,9 @@ module.exports = {
     },
     plugins: [
         htmlPlugin,
-        new ExtractTextPlugin("bundle.[chunkhash].css") // 3, chunkhash, for unique hash
+        new ExtractTextPlugin("bundle.[chunkhash].css") 
     ],
     resolve: {
-        extensions: ['.js', '.jsx'] // 2. Handles js and jsx
+        extensions: ['.js', '.jsx']
     }
 }
