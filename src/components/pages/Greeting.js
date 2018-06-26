@@ -1,10 +1,10 @@
-import React from 'react';
+import React from "react";
 import PropTypes from "prop-types";
 import {connect} from "react-redux";
-import {Jumbotron, Button, ButtonToolbar} from "react-bootstrap";
+import {Jumbotron, Button} from "react-bootstrap";
 import Spinner from "../Spinner";
 import {logout} from "../../actions/logout.actions";
-import {fetchUser} from "../../actions/fetchUser.actions"
+import {fetchUser} from "../../actions/fetchUser.actions";
 
 export const GreetingPage = ({name, userId, logout, fetchUser}) => {
   if (!name) {
@@ -13,7 +13,7 @@ export const GreetingPage = ({name, userId, logout, fetchUser}) => {
       <div className="col-xs-offset-5">
         <Spinner size="64px"/>
       </div>
-    )
+    );
   }
   return (
     <Jumbotron>
@@ -33,7 +33,7 @@ export const GreetingPage = ({name, userId, logout, fetchUser}) => {
       <Button bsStyle="primary" className= "logout-btn" onClick={logout}>Logout</Button>
     </Jumbotron>
   );
-}
+};
 
 GreetingPage.propTypes = {
   name: PropTypes.string,

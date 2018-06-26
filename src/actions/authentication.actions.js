@@ -15,19 +15,21 @@ export const authentication = payload => dispatch => {
   request();
   return new Promise((resolve, reject) => {
     authenticationService(payload)
-    .then(user => { // success
-      dispatch(success(user))
-      if (user.token) {
-        Cookies.set(COOKIE_KEY, JSON.stringify({token: user.token, id: user.id }), { expires: 60 * 60 * 24 }); // Expires in 1 day
-      }
-      resolve(user);
-      return user;
-    })
-    .catch(error => { // error
-      dispatch(failure(error))
-      dispatch(alertActions.failure(error))
-      reject(error);
-      return error;
-    });
-  })
-}
+      .then(user => { // success
+        dispatch(success(user));
+        if (user.token) {
+          Cookies.set(COOKIE_KEY, JSON.stringify({token: user.token, id: user.id }), { expires: 60 * 60 * 24 }); // Expires in 1 day
+        }
+        resolve(user);
+        return user;
+      })
+      /* eslint-disable */
+      .catch(error => { // error
+      /* eslint-enable */
+        dispatch(failure(error));
+        dispatch(alertActions.failure(error));
+        reject(error);
+        return error;
+      });
+  });
+};

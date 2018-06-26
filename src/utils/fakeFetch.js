@@ -8,10 +8,10 @@ const users = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY)) || {};
 const save = users => {
   try {
     localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(users));
-  } catch(e) {
+  } catch (e) {
     // Can't save users
   }
-}
+};
 
 const originalFetch = window.fetch;
 // Fake fetch
@@ -19,7 +19,7 @@ window.fetch = (url, options) => new Promise((resolve, reject) => {
   const {method, body, headers} = options;
   const randomTime = Math.floor(500 * Math.random());
 
-  setTimeout( _ => {
+  setTimeout( _  => {
 
     // register user
     if (url.endsWith("/users/register") && method === "POST") {
@@ -39,17 +39,17 @@ window.fetch = (url, options) => new Promise((resolve, reject) => {
       if (users[user.email] && users[user.email].password ===  user.password) {
         return (
           resolve({ ok: true, json: () => Promise.resolve({
-              ...users[user.email],
-              token: TOKEN,
-              password: undefined
+            ...users[user.email],
+            token: TOKEN,
+            password: undefined
           })})
         );
       }
-      return reject('Username or password is incorrect');
+      return reject("Username or password is incorrect");
     }
 
     // get user
-    const regex = /\/user\/([A-Z0-9a-z-]+)$/
+    const regex = /\/user\/([A-Z0-9a-z-]+)$/;
     if (regex.test(url) && method === "GET") {
       const id = url.match(regex)[1];
       if (id && headers && headers.Authorization === TOKEN) {
@@ -59,7 +59,7 @@ window.fetch = (url, options) => new Promise((resolve, reject) => {
               ...users[user],
               token: TOKEN,
               password: undefined
-            })})
+            })});
           }
         }
       }

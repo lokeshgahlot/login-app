@@ -1,5 +1,5 @@
 import React from "react";
-import {shallow} from "enzyme"
+import {shallow} from "enzyme";
 import {GreetingPage, mapSTP} from "../Greeting";
 import {fromJS} from "immutable";
 
@@ -11,7 +11,7 @@ describe("<GreetingPage />", () => {
 
   it ("calls fetchUser()", () => {
     const fn = jest.fn();
-    const wrapper = shallow(<GreetingPage fetchUser={fn} userId="1234"/>);
+    shallow(<GreetingPage fetchUser={fn} userId="1234"/>);
     expect(fn.mock.calls.length).toBe(1);
     expect(fn.mock.calls[0][0]).toBe("1234");
   });
@@ -28,7 +28,7 @@ describe("<GreetingPage />", () => {
     expect(fn.mock.calls.length).toBe(1);
   });
 
-  it("mapSTP()",()=> {
+  it("mapSTP()",() => {
     const state = fromJS({
       user: {
         name: "Joe"

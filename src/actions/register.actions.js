@@ -13,14 +13,15 @@ export const register = payload => dispatch => {
   request();
   return new Promise((resolve, reject) => {
     registerService(payload)
-    .then(user => { //success
-      dispatch(success(user))
-      resolve(user);
-    })
-    .catch(error => { // error
-      dispatch(failure(error))
-      dispatch(alertActions.failure(error));
-      reject(error);
-    });
-  })
-}
+      .then(user => { //success
+        dispatch(success(user));
+        resolve(user);
+      })/* eslint-disable */
+      .catch(error => { // error
+        /* eslint-enable */
+        dispatch(failure(error));
+        dispatch(alertActions.failure(error));
+        reject(error);
+      });
+  });
+};

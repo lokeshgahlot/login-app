@@ -6,7 +6,7 @@ import PropTypes from "prop-types";
 export const PrivateRoute = ({ component: Component, isAuthenticated, ...rest }) => (
   <Route
     {...rest}
-    render={ props =>
+    render={props =>
       isAuthenticated ? (
         <Component {...props} />
       ) : (
@@ -23,11 +23,11 @@ export const PrivateRoute = ({ component: Component, isAuthenticated, ...rest })
 
 PrivateRoute.propTypes = {
   isAuthenticated: PropTypes.bool
-}
+};
 
 export const mapSTP = state => ({
-    isAuthenticated: state.get("authenticationInfo").get("isAuthenticated")
-})
+  isAuthenticated: state.get("authenticationInfo").get("isAuthenticated")
+});
 
 //Added with withRouter because of the following reason 
 // https://github.com/ReactTraining/react-router/blob/master/packages/react-router/docs/guides/redux.md#blocked-updates

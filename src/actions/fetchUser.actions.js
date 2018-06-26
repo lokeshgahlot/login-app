@@ -7,5 +7,7 @@ export const success = (payload) => ({type: FETCH_USER_SUCCESS, payload});
 export const fetchUser = payload => dispatch => {
   return getUser(payload)
     .then(data => dispatch(success(data)))
-    .catch(error => dispatch(failure(error)))
+    /* eslint-disable */
+    .catch(error => dispatch(failure(error)));
+    /* eslint-enable */
 };

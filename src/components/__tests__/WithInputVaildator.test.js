@@ -1,5 +1,5 @@
 import React from "react";
-import {shallow} from "enzyme"
+import {shallow} from "enzyme";
 import WithInputVaildator from "../WithInputValidator";
 
 describe("<WithInputVaildator />", () => {
@@ -18,19 +18,20 @@ describe("<WithInputVaildator />", () => {
 
   it ("renders correctly", () => {
     const wrapper = shallow(
-        <WithInputVaildator>
-          <input />
-        </WithInputVaildator>
-      );
+      <WithInputVaildator>
+        <input />
+      </WithInputVaildator>
+    );
+    expect(wrapper).toMatchSnapshot();
   });
 
   it ("calls onChange", () => {
     const fn = jest.fn();
     const wrapper = shallow(
-        <WithInputVaildator>
-          <input className="custom-input" onChange={fn}/>
-        </WithInputVaildator>
-      );
+      <WithInputVaildator>
+        <input className="custom-input" onChange={fn}/>
+      </WithInputVaildator>
+    );
     wrapper.find(".custom-input").simulate("change", {
       target: {
         value: "test"
@@ -43,10 +44,10 @@ describe("<WithInputVaildator />", () => {
     const fn = jest.fn();
     const mockSetCustomValidity = jest.fn();
     const wrapper = shallow(
-        <WithInputVaildator>
-          <input className="custom-input" onChange={fn}/>
-        </WithInputVaildator>
-      );
+      <WithInputVaildator>
+        <input className="custom-input" onChange={fn}/>
+      </WithInputVaildator>
+    );
     wrapper.find(".custom-input").simulate("change", {
       target: {
         value: "test@test.com",
@@ -67,12 +68,11 @@ describe("<WithInputVaildator />", () => {
 
   it ("calls onInvalid", () => {
     const fn = jest.fn();
-    const mockSetCustomValidity = jest.fn();
     const wrapper = shallow(
-        <WithInputVaildator>
-          <input className="custom-input" onInvalid={fn}/>
-        </WithInputVaildator>
-      );
+      <WithInputVaildator>
+        <input className="custom-input" onInvalid={fn}/>
+      </WithInputVaildator>
+    );
     wrapper.find(".custom-input").simulate("invalid", {target: {}});
     expect(fn.mock.calls.length).toBe(1);
   });
@@ -81,10 +81,10 @@ describe("<WithInputVaildator />", () => {
     const fn = jest.fn();
     const mockSetCustomValidity = jest.fn();
     const wrapper = shallow(
-        <WithInputVaildator>
-          <input className="custom-input" onInvalid={fn}/>
-        </WithInputVaildator>
-      );
+      <WithInputVaildator>
+        <input className="custom-input" onInvalid={fn}/>
+      </WithInputVaildator>
+    );
     wrapper.find(".custom-input").simulate("invalid", {
       target: {
         setCustomValidity: mockSetCustomValidity

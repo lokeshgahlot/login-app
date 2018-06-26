@@ -1,5 +1,5 @@
 import React from "react";
-import {shallow} from "enzyme"
+import {shallow} from "enzyme";
 import {LoginPage, mapSTP} from "../Login";
 import {fromJS} from "immutable";
 
@@ -21,7 +21,7 @@ describe("<LoginPage />", () => {
     const expectedResult = {
       email: "test@test.com", 
       password: "test"
-    }
+    };
     instance.setState(expectedResult);
     wrapper.find(".form").simulate("submit", {preventDefault: () => {}});
     expect(fn.mock.calls.length).toBe(1);

@@ -12,18 +12,18 @@ const initialState = new Map({
 });
 
 export default (state=initialState , {type, payload}) => {  
-  switch(type) {
-    case AUTHENTICATION_SUCCESS:
-      return state
-        .set("isAuthenticated", true)
-        .set("token", payload.token)
-        .set("id", payload.id)
-    case LOGOUT:
-    case AUTHENTICATION_FAILURE:
-      return state
+  switch (type) {
+  case AUTHENTICATION_SUCCESS:
+    return state
+      .set("isAuthenticated", true)
+      .set("token", payload.token)
+      .set("id", payload.id);
+  case LOGOUT:
+  case AUTHENTICATION_FAILURE:
+    return state
       .set("isAuthenticated", false)
       .set("token", undefined)
-      .set("id", undefined)
+      .set("id", undefined);
   }
   return state;
-}
+};

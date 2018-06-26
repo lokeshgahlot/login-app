@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 import {Redirect, Link} from "react-router-dom";
 import { Button, FormGroup, FormControl, ControlLabel, ButtonToolbar} from "react-bootstrap";
 import {connect} from "react-redux";
@@ -48,18 +48,18 @@ export class RegistrationPage extends Component {
   }
 
   handleSubmit(event) {
-    const {history, register} = this.props;
+    const {register} = this.props;
     const {name, email, password} = this.state;
 
     register({ name, email, password})
-      .then(this.success)
+      .then(this.success);
     event.preventDefault();
   }
 
   render() {
     const {redirectURL} = this.state;
     if (redirectURL.length) {
-      return <Redirect to={{pathname: redirectURL}} />
+      return <Redirect to={{pathname: redirectURL}} />;
     }
 
     return (
@@ -70,12 +70,12 @@ export class RegistrationPage extends Component {
             <FormControl autoFocus type="text" required value={this.state.name} onChange={this.handleChange}/>
           </FormGroup>
 
-            <FormGroup controlId="email" bsSize="large">
-              <ControlLabel>Email</ControlLabel>
-              <WithInputValidator>
-                <FormControl type="email" required value={this.state.email} onChange={this.handleChange}/>
-              </WithInputValidator>
-            </FormGroup>
+          <FormGroup controlId="email" bsSize="large">
+            <ControlLabel>Email</ControlLabel>
+            <WithInputValidator>
+              <FormControl type="email" required value={this.state.email} onChange={this.handleChange}/>
+            </WithInputValidator>
+          </FormGroup>
 
           <FormGroup controlId="password" bsSize="large">
             <ControlLabel>Password</ControlLabel>
@@ -98,7 +98,7 @@ export class RegistrationPage extends Component {
 RegistrationPage.propTypes = {
   register: PropTypes.func,
   showSuccessAlert: PropTypes.func
-}
+};
 
 export default connect(null, {
   register,

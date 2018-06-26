@@ -1,7 +1,6 @@
 import React from "react";
-import {shallow} from "enzyme"
-import {RegistrationPage, mapSTP} from "../Registration";
-import {fromJS} from "immutable";
+import {shallow} from "enzyme";
+import {RegistrationPage} from "../Registration";
 
 describe("<RegistrationPage />", () => {
   it ("renders correctly", () => { 
@@ -30,10 +29,10 @@ describe("<RegistrationPage />", () => {
       name: "Joe", 
       email: "joe@info.com", 
       password: "1234"
-    }
+    };
 
     wrapper.instance().setState(expected);
-    wrapper.find(".form").simulate("submit", {preventDefault: jest.fn()})
+    wrapper.find(".form").simulate("submit", {preventDefault: jest.fn()});
     expect(mockRegister.mock.calls.length).toBe(1);
     expect(mockRegister.mock.calls[0][0]).toEqual(expected);
     // Since setState is async
@@ -43,4 +42,4 @@ describe("<RegistrationPage />", () => {
       done();
     }, 50); // 0 should work, 50ms added just in case
   });
-})
+});

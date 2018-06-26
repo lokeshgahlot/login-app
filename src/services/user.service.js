@@ -1,19 +1,19 @@
 import {store} from "../store";
 
-const handleResponse = response => 
+export const handleResponse = response => 
   response.json().then(data => {
-      if (!response.ok) {
-          const error = (data && data.error) || response.statusText;
-          return Promise.reject(error);
-      }
-      return data;
+    if (!response.ok) {
+      const error = (data && data.error) || response.statusText;
+      return Promise.reject(error);
+    }
+    return data;
   });
 
 // register service
 export const register = user => 
   fetch("/users/register", {
     method: "POST",
-    headers: { 'Content-Type': 'application/json' },
+    headers: { "Content-Type": "application/json" },
     body: JSON.stringify(user)
   }).then(handleResponse);
 
@@ -24,7 +24,7 @@ export const authentication = user =>
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(user)
   })
-  .then(handleResponse);
+    .then(handleResponse);
 
 // getUser service
 export const getUser = userId => {
@@ -32,10 +32,10 @@ export const getUser = userId => {
     method: "GET",
     headers: {
       "Content-Type": "application/json",
-      'Authorization': store.getState().get("authenticationInfo").get("token")
+      "Authorization": store.getState().get("authenticationInfo").get("token")
     }
   })
-  .then(handleResponse); 
-}
+    .then(handleResponse); 
+};
 
   

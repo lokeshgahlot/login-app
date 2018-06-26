@@ -1,5 +1,5 @@
 import React from "react";
-import {shallow} from "enzyme"
+import {shallow} from "enzyme";
 import {fromJS} from "immutable";
 import {AppAlert, mapSTP} from "../WithAlert";
 
@@ -8,7 +8,7 @@ describe("<App />", () => {
   beforeEach(() => {
     mockHistory = {
       listen: jest.fn()
-    }
+    };
   });
 
   afterEach(() => {

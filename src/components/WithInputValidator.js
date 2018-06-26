@@ -1,12 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-
 /* Child should be <input> tag only for 
 this component or React component which renders <input> tag*/
 
 const WithInputVaildator = ({children, message, pattern, type, ...rest}) => {
-  if (children.length == 0 || children.length > 1) {
+  if (children.length === 0 || children.length > 1) {
     throw new Error("<WithEmailVaildator /> should have one child only!");
   }
 
@@ -40,7 +39,7 @@ const WithInputVaildator = ({children, message, pattern, type, ...rest}) => {
       {childrenWithProps}
     </React.Fragment>
   );
-}
+};
 
 WithInputVaildator.propTypes = {
   type: PropTypes.string,

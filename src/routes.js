@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch, Redirect } from "react-router-dom";
+import { BrowserRouter as Router, Route, Redirect } from "react-router-dom";
 import App from "./components/App";
 import LoginPage from "./components/pages/Login";
 import RegistrationPage from "./components/pages/Registration";
@@ -13,7 +13,7 @@ export default _ => {
     <Router>
       <App>
         <WithAlert>
-          <Route path="/" exact render = { _ => <Redirect to="/login"/>} />
+          <Route path="/" exact render = {_ => <Redirect to="/login"/>} />
           <Route path="/login" component={LoginPage} />
           <Route path="/sign-up" component={RegistrationPage} />
           <PrivateRoute path="/greeting" component = {GreetingPage}/> 

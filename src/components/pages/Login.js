@@ -1,11 +1,10 @@
 import React, {Component} from "react";
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 import {Redirect, Link} from "react-router-dom";
-import { Button, FormGroup, FormControl, ControlLabel, ButtonToolbar, Alert} from "react-bootstrap";
+import { Button, FormGroup, FormControl, ControlLabel, ButtonToolbar} from "react-bootstrap";
 import WithInputValidator from "../WithInputValidator";
 import {connect} from "react-redux";
 import {authentication} from "../../actions/authentication.actions";
-import Spinner from "../Spinner";
 import "../../scss/form.scss";
 
 export class LoginPage extends Component {
@@ -42,7 +41,7 @@ export class LoginPage extends Component {
   render() {
     const {isAuthenticated} = this.props;
     if (isAuthenticated) {
-      return <Redirect to={{ pathname: "/greeting", state: { from: this.props.location }}}/>
+      return <Redirect to={{ pathname: "/greeting", state: { from: this.props.location }}}/>;
     }
 
     return (
@@ -69,7 +68,7 @@ export class LoginPage extends Component {
             />
           </FormGroup>
           
-            <ButtonToolbar className="pull-right">
+          <ButtonToolbar className="pull-right">
             <Link to={{pathname: "/sign-up"}}>
               <Button bsSize="large"> Register </Button>
             </Link>
@@ -91,7 +90,7 @@ export class LoginPage extends Component {
 LoginPage.propTypes = {
   isAuthenticated: PropTypes.bool,
   authentication: PropTypes.func
-}
+};
 
 export const mapSTP = (state) => ({
   isAuthenticated: state.get("authenticationInfo").get("isAuthenticated")

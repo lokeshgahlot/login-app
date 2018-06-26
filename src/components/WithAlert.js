@@ -13,19 +13,21 @@ export class AppAlert extends React.Component {
     history.listen(this.historyListener);
   }
 
-  historyListener(location, action) {
-    const {clearAlert} = this.props;
-    clearAlert();
-  }
-
   componentWillUnmount() {
     const {history} = this.props;
     history.unlisten(this.historyListener);
   }
 
+  historyListener(location, action) {
+    const {clearAlert} = this.props;
+    clearAlert();
+  }
+
   render() {
+    /* eslint-disable */
     // don't want to pass dispatch, staticContext, clearAlert into child component
     const {bsStyle, message, children, dispatch, staticContext, clearAlert, ...rest} = this.props;
+    /* eslint-enable */
     return (
       <React.Fragment>
         {
@@ -57,8 +59,7 @@ export const mapSTP = (state) => ({
 //Added with withRouter because of the following reason 
 // https://github.com/ReactTraining/react-router/blob/master/packages/react-router/docs/guides/redux.md#blocked-updates
 export default withRouter(
-  connect(mapSTP, {clearAlert: clear})
-  (AppAlert)
+  connect(mapSTP, {clearAlert: clear})(AppAlert)
 );
 
 

@@ -21,11 +21,11 @@ const Spinner = ({size, color}) => (
 Spinner.propTypes = {
   size: PropTypes.string,
   color: PropTypes.string,
-}
+};
 
 Spinner.defaultProps = {
   size: "32px",
   color: "#000000",
-}
+};
 
 export default Spinner;
