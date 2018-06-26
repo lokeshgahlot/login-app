@@ -1,79 +1,44 @@
-<testsuites name="jest tests" tests="29" failures="0" time="1.101">
-  <testsuite name="&lt;RegistrationPage /&gt;" errors="0" failures="0" skipped="0" timestamp="2018-06-26T18:28:39" time="0.345" tests="3">
-    <testcase classname="&lt;RegistrationPage /&gt; renders correctly" name="&lt;RegistrationPage /&gt; renders correctly" time="0.005">
+<testsuites name="jest tests" tests="16" failures="0" time="0.504">
+  <testsuite name="user.reducer" errors="0" failures="0" skipped="0" timestamp="2018-06-26T19:50:49" time="0.169" tests="5">
+    <testcase classname="user.reducer AUTHENTICATION_SUCCESS case " name="user.reducer AUTHENTICATION_SUCCESS case " time="0">
     </testcase>
-    <testcase classname="&lt;RegistrationPage /&gt; renders &lt;Redirect&gt;" name="&lt;RegistrationPage /&gt; renders &lt;Redirect&gt;" time="0.004">
+    <testcase classname="user.reducer FETCH_USER_SUCCESS case " name="user.reducer FETCH_USER_SUCCESS case " time="0.001">
     </testcase>
-    <testcase classname="&lt;RegistrationPage /&gt; calls register on form submit" name="&lt;RegistrationPage /&gt; calls register on form submit" time="0.053">
+    <testcase classname="user.reducer LOGOUT case " name="user.reducer LOGOUT case " time="0">
     </testcase>
-  </testsuite>
-  <testsuite name="&lt;LoginPage /&gt;" errors="0" failures="0" skipped="0" timestamp="2018-06-26T18:28:39" time="0.101" tests="4">
-    <testcase classname="&lt;LoginPage /&gt; renders correctly" name="&lt;LoginPage /&gt; renders correctly" time="0.006">
+    <testcase classname="user.reducer AUTHENTICATION_FAILURE case " name="user.reducer AUTHENTICATION_FAILURE case " time="0">
     </testcase>
-    <testcase classname="&lt;LoginPage /&gt; redirects" name="&lt;LoginPage /&gt; redirects" time="0">
-    </testcase>
-    <testcase classname="&lt;LoginPage /&gt; calls authentication on form submit" name="&lt;LoginPage /&gt; calls authentication on form submit" time="0.002">
-    </testcase>
-    <testcase classname="&lt;LoginPage /&gt; mapSTP()" name="&lt;LoginPage /&gt; mapSTP()" time="0.001">
+    <testcase classname="user.reducer AUTHENTICATION_REQUEST case " name="user.reducer AUTHENTICATION_REQUEST case " time="0">
     </testcase>
   </testsuite>
-  <testsuite name="&lt;Root /&gt;" errors="0" failures="0" skipped="0" timestamp="2018-06-26T18:28:39" time="0.092" tests="1">
-    <testcase classname="&lt;Root /&gt; renders correctly" name="&lt;Root /&gt; renders correctly" time="0.002">
+  <testsuite name="authentication.actions" errors="0" failures="0" skipped="0" timestamp="2018-06-26T19:50:49" time="0.053" tests="3">
+    <testcase classname="authentication.actions request()" name="authentication.actions request()" time="0.001">
+    </testcase>
+    <testcase classname="authentication.actions success()" name="authentication.actions success()" time="0">
+    </testcase>
+    <testcase classname="authentication.actions failure()" name="authentication.actions failure()" time="0">
     </testcase>
   </testsuite>
-  <testsuite name="&lt;App /&gt;" errors="0" failures="0" skipped="0" timestamp="2018-06-26T18:28:40" time="0.103" tests="5">
-    <testcase classname="&lt;App /&gt; renders without alert" name="&lt;App /&gt; renders without alert" time="0.002">
+  <testsuite name="alert.actions" errors="0" failures="0" skipped="0" timestamp="2018-06-26T19:50:49" time="0.051" tests="3">
+    <testcase classname="alert.actions clear()" name="alert.actions clear()" time="0.001">
     </testcase>
-    <testcase classname="&lt;App /&gt; renders with alert" name="&lt;App /&gt; renders with alert" time="0.002">
+    <testcase classname="alert.actions success()" name="alert.actions success()" time="0">
     </testcase>
-    <testcase classname="&lt;App /&gt; adds history listener" name="&lt;App /&gt; adds history listener" time="0.001">
-    </testcase>
-    <testcase classname="&lt;App /&gt; AppAlert.historyListener() calls clearAlert()" name="&lt;App /&gt; AppAlert.historyListener() calls clearAlert()" time="0">
-    </testcase>
-    <testcase classname="&lt;App /&gt; mapSTP()" name="&lt;App /&gt; mapSTP()" time="0.001">
+    <testcase classname="alert.actions failure()" name="alert.actions failure()" time="0">
     </testcase>
   </testsuite>
-  <testsuite name="&lt;GreetingPage /&gt;" errors="0" failures="0" skipped="0" timestamp="2018-06-26T18:28:40" time="0.089" tests="5">
-    <testcase classname="&lt;GreetingPage /&gt; renders spinner" name="&lt;GreetingPage /&gt; renders spinner" time="0.002">
+  <testsuite name="alert.reducer" errors="0" failures="0" skipped="0" timestamp="2018-06-26T19:50:49" time="0.053" tests="3">
+    <testcase classname="alert.reducer ALERT_SUCCESS case " name="alert.reducer ALERT_SUCCESS case " time="0.001">
     </testcase>
-    <testcase classname="&lt;GreetingPage /&gt; calls fetchUser()" name="&lt;GreetingPage /&gt; calls fetchUser()" time="0">
+    <testcase classname="alert.reducer ALERT_CLEAR case " name="alert.reducer ALERT_CLEAR case " time="0">
     </testcase>
-    <testcase classname="&lt;GreetingPage /&gt; renders greeting page" name="&lt;GreetingPage /&gt; renders greeting page" time="0.002">
-    </testcase>
-    <testcase classname="&lt;GreetingPage /&gt; renders logout()" name="&lt;GreetingPage /&gt; renders logout()" time="0.002">
-    </testcase>
-    <testcase classname="&lt;GreetingPage /&gt; mapSTP()" name="&lt;GreetingPage /&gt; mapSTP()" time="0">
+    <testcase classname="alert.reducer ALERT_FAILURE case " name="alert.reducer ALERT_FAILURE case " time="0">
     </testcase>
   </testsuite>
-  <testsuite name="&lt;PrivateRoute /&gt;" errors="0" failures="0" skipped="0" timestamp="2018-06-26T18:28:40" time="0.062" tests="3">
-    <testcase classname="&lt;PrivateRoute /&gt; renders with component" name="&lt;PrivateRoute /&gt; renders with component" time="0.002">
+  <testsuite name="authentication.reducer" errors="0" failures="0" skipped="0" timestamp="2018-06-26T19:50:49" time="0.057" tests="2">
+    <testcase classname="authentication.reducer AUTHENTICATION_SUCCESS case " name="authentication.reducer AUTHENTICATION_SUCCESS case " time="0.001">
     </testcase>
-    <testcase classname="&lt;PrivateRoute /&gt; renders with &lt;Redirect&gt;" name="&lt;PrivateRoute /&gt; renders with &lt;Redirect&gt;" time="0.001">
-    </testcase>
-    <testcase classname="&lt;PrivateRoute /&gt; mapSTP()" name="&lt;PrivateRoute /&gt; mapSTP()" time="0">
-    </testcase>
-  </testsuite>
-  <testsuite name="&lt;Spinner /&gt;" errors="0" failures="0" skipped="0" timestamp="2018-06-26T18:28:40" time="0.055" tests="1">
-    <testcase classname="&lt;Spinner /&gt; renders correctly" name="&lt;Spinner /&gt; renders correctly" time="0.005">
-    </testcase>
-  </testsuite>
-  <testsuite name="&lt;WithInputVaildator /&gt;" errors="0" failures="0" skipped="1" timestamp="2018-06-26T18:28:40" time="0.052" tests="6">
-    <testcase classname="&lt;WithInputVaildator /&gt; should throw Error when zero or more than one children" name="&lt;WithInputVaildator /&gt; should throw Error when zero or more than one children" time="0">
-      <skipped/>
-    </testcase>
-    <testcase classname="&lt;WithInputVaildator /&gt; renders correctly" name="&lt;WithInputVaildator /&gt; renders correctly" time="0.001">
-    </testcase>
-    <testcase classname="&lt;WithInputVaildator /&gt; calls onChange" name="&lt;WithInputVaildator /&gt; calls onChange" time="0.001">
-    </testcase>
-    <testcase classname="&lt;WithInputVaildator /&gt; onChange() calls setCustomValidity" name="&lt;WithInputVaildator /&gt; onChange() calls setCustomValidity" time="0.001">
-    </testcase>
-    <testcase classname="&lt;WithInputVaildator /&gt; calls onInvalid" name="&lt;WithInputVaildator /&gt; calls onInvalid" time="0.001">
-    </testcase>
-    <testcase classname="&lt;WithInputVaildator /&gt; onInvalid() calls setCustomValidity" name="&lt;WithInputVaildator /&gt; onInvalid() calls setCustomValidity" time="0">
-    </testcase>
-  </testsuite>
-  <testsuite name="&lt;App /&gt;" errors="0" failures="0" skipped="0" timestamp="2018-06-26T18:28:40" time="0.049" tests="1">
-    <testcase classname="&lt;App /&gt; renders correctly" name="&lt;App /&gt; renders correctly" time="0.001">
+    <testcase classname="authentication.reducer AUTHENTICATION_SUCCESS case " name="authentication.reducer AUTHENTICATION_SUCCESS case " time="0">
     </testcase>
   </testsuite>
 </testsuites>

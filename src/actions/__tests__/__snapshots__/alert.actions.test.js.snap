@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`alert.actions clear() 1`] = `
+Object {
+  "type": "ALERT_CLEAR",
+}
+`;
+
+exports[`alert.actions failure() 1`] = `
+Object {
+  "payload": "Alert failure!!",
+  "type": "ALERT_FAILURE",
+}
+`;
+
+exports[`alert.actions success() 1`] = `
+Object {
+  "payload": "Alert success!!",
+  "type": "ALERT_SUCCESS",
+}
+`;

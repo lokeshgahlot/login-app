@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`authentication.actions failure() 1`] = `
+Object {
+  "payload": "failure!!",
+  "type": "AUTHENTICATION_FAILURE",
+}
+`;
+
+exports[`authentication.actions request() 1`] = `
+Object {
+  "type": "AUTHENTICATION_REQUEST",
+}
+`;
+
+exports[`authentication.actions success() 1`] = `
+Object {
+  "payload": "success!!",
+  "type": "AUTHENTICATION_SUCCESS",
+}
+`;
