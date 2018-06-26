@@ -5,4 +5,5 @@ node_modules/
 dest/
 public/
 npm-debug.log
+junit.xml
 */**/npm-debug.log
