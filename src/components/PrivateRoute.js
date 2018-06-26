@@ -25,7 +25,7 @@ PrivateRoute.propTypes = {
   isAuthenticated: PropTypes.bool
 }
 
-const mapSTP = (state, ownProps) => ({
+export const mapSTP = state => ({
     isAuthenticated: state.get("authenticationInfo").get("isAuthenticated")
 })
 

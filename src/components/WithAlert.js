@@ -24,6 +24,7 @@ export class AppAlert extends React.Component {
   }
 
   render() {
+    // don't want to pass dispatch, staticContext, clearAlert into child component
     const {bsStyle, message, children, dispatch, staticContext, clearAlert, ...rest} = this.props;
     return (
       <React.Fragment>
@@ -38,7 +39,8 @@ export class AppAlert extends React.Component {
 
 AppAlert.propTypes = {
   bsStyle: PropTypes.string,
-  message: PropTypes.string
+  message: PropTypes.string,
+  clearAlert: PropTypes.func
 };
 
 AppAlert.defaultProps = {
@@ -47,7 +49,7 @@ AppAlert.defaultProps = {
 };
 
 
-const mapSTP = (state) => ({
+export const mapSTP = (state) => ({
   bsStyle: state.get("alert").get("type"),
   message: state.get("alert").get("message")
 });

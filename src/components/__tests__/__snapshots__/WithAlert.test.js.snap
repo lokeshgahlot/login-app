@@ -1,0 +1,279 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<App /> renders with alert 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <AppAlert
+    bsStyle="info"
+    history={
+      Object {
+        "listen": [MockFunction] {
+          "calls": Array [
+            Array [
+              [Function],
+            ],
+          ],
+        },
+      }
+    }
+    message="Test alert!!"
+  >
+    <span>
+      hello
+    </span>
+  </AppAlert>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": Array [
+        <Alert
+          bsClass="alert"
+          bsStyle="info"
+          closeLabel="Close alert"
+          history={
+            Object {
+              "listen": [MockFunction] {
+                "calls": Array [
+                  Array [
+                    [Function],
+                  ],
+                ],
+              },
+            }
+          }
+        >
+          Test alert!!
+        </Alert>,
+        <span>
+          hello
+        </span>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "bsClass": "alert",
+          "bsStyle": "info",
+          "children": "Test alert!!",
+          "closeLabel": "Close alert",
+          "history": Object {
+            "listen": [MockFunction] {
+              "calls": Array [
+                Array [
+                  [Function],
+                ],
+              ],
+            },
+          },
+        },
+        "ref": null,
+        "rendered": "Test alert!!",
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "hello",
+        },
+        "ref": null,
+        "rendered": "hello",
+        "type": "span",
+      },
+    ],
+    "type": Symbol(react.fragment),
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          <Alert
+            bsClass="alert"
+            bsStyle="info"
+            closeLabel="Close alert"
+            history={
+              Object {
+                "listen": [MockFunction] {
+                  "calls": Array [
+                    Array [
+                      [Function],
+                    ],
+                  ],
+                },
+              }
+            }
+          >
+            Test alert!!
+          </Alert>,
+          <span>
+            hello
+          </span>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "bsClass": "alert",
+            "bsStyle": "info",
+            "children": "Test alert!!",
+            "closeLabel": "Close alert",
+            "history": Object {
+              "listen": [MockFunction] {
+                "calls": Array [
+                  Array [
+                    [Function],
+                  ],
+                ],
+              },
+            },
+          },
+          "ref": null,
+          "rendered": "Test alert!!",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "hello",
+          },
+          "ref": null,
+          "rendered": "hello",
+          "type": "span",
+        },
+      ],
+      "type": Symbol(react.fragment),
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`<App /> renders without alert 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <AppAlert
+    bsStyle="danger"
+    history={
+      Object {
+        "listen": [MockFunction] {
+          "calls": Array [
+            Array [
+              [Function],
+            ],
+          ],
+        },
+      }
+    }
+    message=""
+  >
+    <span>
+      hello
+    </span>
+  </AppAlert>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": Array [
+        null,
+        <span>
+          hello
+        </span>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      null,
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "hello",
+        },
+        "ref": null,
+        "rendered": "hello",
+        "type": "span",
+      },
+    ],
+    "type": Symbol(react.fragment),
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          null,
+          <span>
+            hello
+          </span>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        null,
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "hello",
+          },
+          "ref": null,
+          "rendered": "hello",
+          "type": "span",
+        },
+      ],
+      "type": Symbol(react.fragment),
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

@@ -1,9 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const withInputVaildator = ({children, message, pattern, type, ...rest}) => {
+
+/* Child should be <input> tag only for 
+this component or React component which renders <input> tag*/
+
+const WithInputVaildator = ({children, message, pattern, type, ...rest}) => {
   if (children.length == 0 || children.length > 1) {
-    throw new Error("<withEmailVaildator /> should have one child only!");
+    throw new Error("<WithEmailVaildator /> should have one child only!");
   }
 
   const childProps = {};
@@ -38,16 +42,17 @@ const withInputVaildator = ({children, message, pattern, type, ...rest}) => {
   );
 }
 
-withInputVaildator.propTypes = {
+WithInputVaildator.propTypes = {
+  type: PropTypes.string,
   message: PropTypes.string,
   pattern: PropTypes.string
 };
 
-withInputVaildator.defaultProps = {
+WithInputVaildator.defaultProps = {
   message: "Invalid email",
   type: "email",
   pattern: "^([\\w.%+-]+)@([\\w-]+\\.)+([\\w]{2,})$"
 };
 
-export default withInputVaildator;
+export default WithInputVaildator;
 

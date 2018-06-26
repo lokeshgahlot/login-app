@@ -30,7 +30,7 @@ export const GreetingPage = ({name, userId, logout, fetchUser}) => {
         Morbi ac consequat nisi, eu vehicula dui. Quisque tincidunt
         bibendum auctor. Etiam a auctor lectus.
       </p>
-      <Button bsStyle="primary" onClick={logout}>Logout</Button>
+      <Button bsStyle="primary" className= "logout-btn" onClick={logout}>Logout</Button>
     </Jumbotron>
   );
 }
@@ -42,7 +42,7 @@ GreetingPage.propTypes = {
   fetchUser: PropTypes.func
 };
 
-const mapSTP = (state) => ({
+export const mapSTP = (state) => ({
   name: state.get("user").get("name"),
   userId: state.get("authenticationInfo").get("id")
 });

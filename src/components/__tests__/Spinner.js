@@ -1,10 +1,10 @@
 import React from "react";
 import {shallow} from "enzyme"
-import App from "../App";
+import Spinner from "../Spinner";
 
-describe("<App />", () => {
+describe("<Spinner />", () => {
   it ("renders correctly", () => {
-    const wrapper = shallow(<App><span>hello</span></App>);
+  const wrapper = shallow(<Spinner size="64px" color="#ffffff" />);
     expect(wrapper).toMatchSnapshot();
   });
 });

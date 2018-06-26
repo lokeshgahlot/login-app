@@ -1,6 +1,79 @@
-<testsuites name="jest tests" tests="1" failures="0" time="0.582">
-  <testsuite name="&lt;App /&gt;" errors="0" failures="0" skipped="0" timestamp="2018-06-25T16:54:01" time="0.571" tests="1">
-    <testcase classname="&lt;App /&gt; renders correctly" name="&lt;App /&gt; renders correctly" time="0.003">
+<testsuites name="jest tests" tests="29" failures="0" time="1.101">
+  <testsuite name="&lt;RegistrationPage /&gt;" errors="0" failures="0" skipped="0" timestamp="2018-06-26T18:28:39" time="0.345" tests="3">
+    <testcase classname="&lt;RegistrationPage /&gt; renders correctly" name="&lt;RegistrationPage /&gt; renders correctly" time="0.005">
+    </testcase>
+    <testcase classname="&lt;RegistrationPage /&gt; renders &lt;Redirect&gt;" name="&lt;RegistrationPage /&gt; renders &lt;Redirect&gt;" time="0.004">
+    </testcase>
+    <testcase classname="&lt;RegistrationPage /&gt; calls register on form submit" name="&lt;RegistrationPage /&gt; calls register on form submit" time="0.053">
+    </testcase>
+  </testsuite>
+  <testsuite name="&lt;LoginPage /&gt;" errors="0" failures="0" skipped="0" timestamp="2018-06-26T18:28:39" time="0.101" tests="4">
+    <testcase classname="&lt;LoginPage /&gt; renders correctly" name="&lt;LoginPage /&gt; renders correctly" time="0.006">
+    </testcase>
+    <testcase classname="&lt;LoginPage /&gt; redirects" name="&lt;LoginPage /&gt; redirects" time="0">
+    </testcase>
+    <testcase classname="&lt;LoginPage /&gt; calls authentication on form submit" name="&lt;LoginPage /&gt; calls authentication on form submit" time="0.002">
+    </testcase>
+    <testcase classname="&lt;LoginPage /&gt; mapSTP()" name="&lt;LoginPage /&gt; mapSTP()" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="&lt;Root /&gt;" errors="0" failures="0" skipped="0" timestamp="2018-06-26T18:28:39" time="0.092" tests="1">
+    <testcase classname="&lt;Root /&gt; renders correctly" name="&lt;Root /&gt; renders correctly" time="0.002">
+    </testcase>
+  </testsuite>
+  <testsuite name="&lt;App /&gt;" errors="0" failures="0" skipped="0" timestamp="2018-06-26T18:28:40" time="0.103" tests="5">
+    <testcase classname="&lt;App /&gt; renders without alert" name="&lt;App /&gt; renders without alert" time="0.002">
+    </testcase>
+    <testcase classname="&lt;App /&gt; renders with alert" name="&lt;App /&gt; renders with alert" time="0.002">
+    </testcase>
+    <testcase classname="&lt;App /&gt; adds history listener" name="&lt;App /&gt; adds history listener" time="0.001">
+    </testcase>
+    <testcase classname="&lt;App /&gt; AppAlert.historyListener() calls clearAlert()" name="&lt;App /&gt; AppAlert.historyListener() calls clearAlert()" time="0">
+    </testcase>
+    <testcase classname="&lt;App /&gt; mapSTP()" name="&lt;App /&gt; mapSTP()" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="&lt;GreetingPage /&gt;" errors="0" failures="0" skipped="0" timestamp="2018-06-26T18:28:40" time="0.089" tests="5">
+    <testcase classname="&lt;GreetingPage /&gt; renders spinner" name="&lt;GreetingPage /&gt; renders spinner" time="0.002">
+    </testcase>
+    <testcase classname="&lt;GreetingPage /&gt; calls fetchUser()" name="&lt;GreetingPage /&gt; calls fetchUser()" time="0">
+    </testcase>
+    <testcase classname="&lt;GreetingPage /&gt; renders greeting page" name="&lt;GreetingPage /&gt; renders greeting page" time="0.002">
+    </testcase>
+    <testcase classname="&lt;GreetingPage /&gt; renders logout()" name="&lt;GreetingPage /&gt; renders logout()" time="0.002">
+    </testcase>
+    <testcase classname="&lt;GreetingPage /&gt; mapSTP()" name="&lt;GreetingPage /&gt; mapSTP()" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="&lt;PrivateRoute /&gt;" errors="0" failures="0" skipped="0" timestamp="2018-06-26T18:28:40" time="0.062" tests="3">
+    <testcase classname="&lt;PrivateRoute /&gt; renders with component" name="&lt;PrivateRoute /&gt; renders with component" time="0.002">
+    </testcase>
+    <testcase classname="&lt;PrivateRoute /&gt; renders with &lt;Redirect&gt;" name="&lt;PrivateRoute /&gt; renders with &lt;Redirect&gt;" time="0.001">
+    </testcase>
+    <testcase classname="&lt;PrivateRoute /&gt; mapSTP()" name="&lt;PrivateRoute /&gt; mapSTP()" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="&lt;Spinner /&gt;" errors="0" failures="0" skipped="0" timestamp="2018-06-26T18:28:40" time="0.055" tests="1">
+    <testcase classname="&lt;Spinner /&gt; renders correctly" name="&lt;Spinner /&gt; renders correctly" time="0.005">
+    </testcase>
+  </testsuite>
+  <testsuite name="&lt;WithInputVaildator /&gt;" errors="0" failures="0" skipped="1" timestamp="2018-06-26T18:28:40" time="0.052" tests="6">
+    <testcase classname="&lt;WithInputVaildator /&gt; should throw Error when zero or more than one children" name="&lt;WithInputVaildator /&gt; should throw Error when zero or more than one children" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname="&lt;WithInputVaildator /&gt; renders correctly" name="&lt;WithInputVaildator /&gt; renders correctly" time="0.001">
+    </testcase>
+    <testcase classname="&lt;WithInputVaildator /&gt; calls onChange" name="&lt;WithInputVaildator /&gt; calls onChange" time="0.001">
+    </testcase>
+    <testcase classname="&lt;WithInputVaildator /&gt; onChange() calls setCustomValidity" name="&lt;WithInputVaildator /&gt; onChange() calls setCustomValidity" time="0.001">
+    </testcase>
+    <testcase classname="&lt;WithInputVaildator /&gt; calls onInvalid" name="&lt;WithInputVaildator /&gt; calls onInvalid" time="0.001">
+    </testcase>
+    <testcase classname="&lt;WithInputVaildator /&gt; onInvalid() calls setCustomValidity" name="&lt;WithInputVaildator /&gt; onInvalid() calls setCustomValidity" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="&lt;App /&gt;" errors="0" failures="0" skipped="0" timestamp="2018-06-26T18:28:40" time="0.049" tests="1">
+    <testcase classname="&lt;App /&gt; renders correctly" name="&lt;App /&gt; renders correctly" time="0.001">
     </testcase>
   </testsuite>
 </testsuites>

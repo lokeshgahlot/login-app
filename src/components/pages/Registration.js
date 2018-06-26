@@ -41,12 +41,10 @@ export class RegistrationPage extends Component {
   }
 
   success() {
-    const {showSuccessAlert, clearAlert} = this.props;
+    const {showSuccessAlert} = this.props;
     this.setState({
       redirectURL: "/login"
-    }, () => {
-      showSuccessAlert("Registration Successful!!")
-    });
+    }, () => showSuccessAlert("Registration Successful!!"));
   }
 
   handleSubmit(event) {
@@ -99,11 +97,10 @@ export class RegistrationPage extends Component {
 
 RegistrationPage.propTypes = {
   register: PropTypes.func,
-  alertSuccess: PropTypes.func
+  showSuccessAlert: PropTypes.func
 }
 
 export default connect(null, {
   register,
   showSuccessAlert: alertActions.success,
-  clearAlert: alertActions.clear
 })(RegistrationPage);

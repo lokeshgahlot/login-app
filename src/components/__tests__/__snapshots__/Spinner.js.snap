@@ -1,0 +1,714 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Spinner /> renders correctly 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Spinner
+    color="#ffffff"
+    size="64px"
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <rect
+          fill="#FFFFFF"
+          height="100%"
+          width="100%"
+          x="0"
+          y="0"
+        />,
+        <g>
+          <circle
+            cx="16"
+            cy="64"
+            fill="#ffffff"
+            fillOpacity="1"
+            r="16"
+          />
+          <circle
+            cx="16"
+            cy="64"
+            fill="#ffffff"
+            fillOpacity="1"
+            r="14.344"
+            transform="rotate(45 64 64)"
+          />
+          <circle
+            cx="16"
+            cy="64"
+            fill="#ffffff"
+            fillOpacity="1"
+            r="12.531"
+            transform="rotate(90 64 64)"
+          />
+          <circle
+            cx="16"
+            cy="64"
+            fill="#ffffff"
+            fillOpacity="1"
+            r="10.75"
+            transform="rotate(135 64 64)"
+          />
+          <circle
+            cx="16"
+            cy="64"
+            fill="#ffffff"
+            fillOpacity="1"
+            r="10.063"
+            transform="rotate(180 64 64)"
+          />
+          <circle
+            cx="16"
+            cy="64"
+            fill="#ffffff"
+            fillOpacity="1"
+            r="8.063"
+            transform="rotate(225 64 64)"
+          />
+          <circle
+            cx="16"
+            cy="64"
+            fill="#ffffff"
+            fillOpacity="1"
+            r="6.438"
+            transform="rotate(270 64 64)"
+          />
+          <circle
+            cx="16"
+            cy="64"
+            fill="#ffffff"
+            fillOpacity="1"
+            r="5.375"
+            transform="rotate(315 64 64)"
+          />
+          <animateTransform
+            attributeName="transform"
+            calcMode="discrete"
+            dur="720ms"
+            repeatCount="indefinite"
+            type="rotate"
+            values="0 64 64;315 64 64;270 64 64;225 64 64;180 64 64;135 64 64;90 64 64;45 64 64"
+          />
+        </g>,
+      ],
+      "height": "64px",
+      "version": "1.0",
+      "viewBox": "0 0 128 128",
+      "width": "64px",
+      "xmlSpace": "preserve",
+      "xmlns": "http://www.w3.org/2000/svg",
+      "xmlnsXlink": "http://www.w3.org/1999/xlink",
+      "xmlnssvg": "http://www.w3.org/2000/svg",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "fill": "#FFFFFF",
+          "height": "100%",
+          "width": "100%",
+          "x": "0",
+          "y": "0",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "rect",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <circle
+              cx="16"
+              cy="64"
+              fill="#ffffff"
+              fillOpacity="1"
+              r="16"
+            />,
+            <circle
+              cx="16"
+              cy="64"
+              fill="#ffffff"
+              fillOpacity="1"
+              r="14.344"
+              transform="rotate(45 64 64)"
+            />,
+            <circle
+              cx="16"
+              cy="64"
+              fill="#ffffff"
+              fillOpacity="1"
+              r="12.531"
+              transform="rotate(90 64 64)"
+            />,
+            <circle
+              cx="16"
+              cy="64"
+              fill="#ffffff"
+              fillOpacity="1"
+              r="10.75"
+              transform="rotate(135 64 64)"
+            />,
+            <circle
+              cx="16"
+              cy="64"
+              fill="#ffffff"
+              fillOpacity="1"
+              r="10.063"
+              transform="rotate(180 64 64)"
+            />,
+            <circle
+              cx="16"
+              cy="64"
+              fill="#ffffff"
+              fillOpacity="1"
+              r="8.063"
+              transform="rotate(225 64 64)"
+            />,
+            <circle
+              cx="16"
+              cy="64"
+              fill="#ffffff"
+              fillOpacity="1"
+              r="6.438"
+              transform="rotate(270 64 64)"
+            />,
+            <circle
+              cx="16"
+              cy="64"
+              fill="#ffffff"
+              fillOpacity="1"
+              r="5.375"
+              transform="rotate(315 64 64)"
+            />,
+            <animateTransform
+              attributeName="transform"
+              calcMode="discrete"
+              dur="720ms"
+              repeatCount="indefinite"
+              type="rotate"
+              values="0 64 64;315 64 64;270 64 64;225 64 64;180 64 64;135 64 64;90 64 64;45 64 64"
+            />,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "cx": "16",
+              "cy": "64",
+              "fill": "#ffffff",
+              "fillOpacity": "1",
+              "r": "16",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "circle",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "cx": "16",
+              "cy": "64",
+              "fill": "#ffffff",
+              "fillOpacity": "1",
+              "r": "14.344",
+              "transform": "rotate(45 64 64)",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "circle",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "cx": "16",
+              "cy": "64",
+              "fill": "#ffffff",
+              "fillOpacity": "1",
+              "r": "12.531",
+              "transform": "rotate(90 64 64)",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "circle",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "cx": "16",
+              "cy": "64",
+              "fill": "#ffffff",
+              "fillOpacity": "1",
+              "r": "10.75",
+              "transform": "rotate(135 64 64)",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "circle",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "cx": "16",
+              "cy": "64",
+              "fill": "#ffffff",
+              "fillOpacity": "1",
+              "r": "10.063",
+              "transform": "rotate(180 64 64)",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "circle",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "cx": "16",
+              "cy": "64",
+              "fill": "#ffffff",
+              "fillOpacity": "1",
+              "r": "8.063",
+              "transform": "rotate(225 64 64)",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "circle",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "cx": "16",
+              "cy": "64",
+              "fill": "#ffffff",
+              "fillOpacity": "1",
+              "r": "6.438",
+              "transform": "rotate(270 64 64)",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "circle",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "cx": "16",
+              "cy": "64",
+              "fill": "#ffffff",
+              "fillOpacity": "1",
+              "r": "5.375",
+              "transform": "rotate(315 64 64)",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "circle",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "attributeName": "transform",
+              "calcMode": "discrete",
+              "dur": "720ms",
+              "repeatCount": "indefinite",
+              "type": "rotate",
+              "values": "0 64 64;315 64 64;270 64 64;225 64 64;180 64 64;135 64 64;90 64 64;45 64 64",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "animateTransform",
+          },
+        ],
+        "type": "g",
+      },
+    ],
+    "type": "svg",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <rect
+            fill="#FFFFFF"
+            height="100%"
+            width="100%"
+            x="0"
+            y="0"
+          />,
+          <g>
+            <circle
+              cx="16"
+              cy="64"
+              fill="#ffffff"
+              fillOpacity="1"
+              r="16"
+            />
+            <circle
+              cx="16"
+              cy="64"
+              fill="#ffffff"
+              fillOpacity="1"
+              r="14.344"
+              transform="rotate(45 64 64)"
+            />
+            <circle
+              cx="16"
+              cy="64"
+              fill="#ffffff"
+              fillOpacity="1"
+              r="12.531"
+              transform="rotate(90 64 64)"
+            />
+            <circle
+              cx="16"
+              cy="64"
+              fill="#ffffff"
+              fillOpacity="1"
+              r="10.75"
+              transform="rotate(135 64 64)"
+            />
+            <circle
+              cx="16"
+              cy="64"
+              fill="#ffffff"
+              fillOpacity="1"
+              r="10.063"
+              transform="rotate(180 64 64)"
+            />
+            <circle
+              cx="16"
+              cy="64"
+              fill="#ffffff"
+              fillOpacity="1"
+              r="8.063"
+              transform="rotate(225 64 64)"
+            />
+            <circle
+              cx="16"
+              cy="64"
+              fill="#ffffff"
+              fillOpacity="1"
+              r="6.438"
+              transform="rotate(270 64 64)"
+            />
+            <circle
+              cx="16"
+              cy="64"
+              fill="#ffffff"
+              fillOpacity="1"
+              r="5.375"
+              transform="rotate(315 64 64)"
+            />
+            <animateTransform
+              attributeName="transform"
+              calcMode="discrete"
+              dur="720ms"
+              repeatCount="indefinite"
+              type="rotate"
+              values="0 64 64;315 64 64;270 64 64;225 64 64;180 64 64;135 64 64;90 64 64;45 64 64"
+            />
+          </g>,
+        ],
+        "height": "64px",
+        "version": "1.0",
+        "viewBox": "0 0 128 128",
+        "width": "64px",
+        "xmlSpace": "preserve",
+        "xmlns": "http://www.w3.org/2000/svg",
+        "xmlnsXlink": "http://www.w3.org/1999/xlink",
+        "xmlnssvg": "http://www.w3.org/2000/svg",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "fill": "#FFFFFF",
+            "height": "100%",
+            "width": "100%",
+            "x": "0",
+            "y": "0",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "rect",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <circle
+                cx="16"
+                cy="64"
+                fill="#ffffff"
+                fillOpacity="1"
+                r="16"
+              />,
+              <circle
+                cx="16"
+                cy="64"
+                fill="#ffffff"
+                fillOpacity="1"
+                r="14.344"
+                transform="rotate(45 64 64)"
+              />,
+              <circle
+                cx="16"
+                cy="64"
+                fill="#ffffff"
+                fillOpacity="1"
+                r="12.531"
+                transform="rotate(90 64 64)"
+              />,
+              <circle
+                cx="16"
+                cy="64"
+                fill="#ffffff"
+                fillOpacity="1"
+                r="10.75"
+                transform="rotate(135 64 64)"
+              />,
+              <circle
+                cx="16"
+                cy="64"
+                fill="#ffffff"
+                fillOpacity="1"
+                r="10.063"
+                transform="rotate(180 64 64)"
+              />,
+              <circle
+                cx="16"
+                cy="64"
+                fill="#ffffff"
+                fillOpacity="1"
+                r="8.063"
+                transform="rotate(225 64 64)"
+              />,
+              <circle
+                cx="16"
+                cy="64"
+                fill="#ffffff"
+                fillOpacity="1"
+                r="6.438"
+                transform="rotate(270 64 64)"
+              />,
+              <circle
+                cx="16"
+                cy="64"
+                fill="#ffffff"
+                fillOpacity="1"
+                r="5.375"
+                transform="rotate(315 64 64)"
+              />,
+              <animateTransform
+                attributeName="transform"
+                calcMode="discrete"
+                dur="720ms"
+                repeatCount="indefinite"
+                type="rotate"
+                values="0 64 64;315 64 64;270 64 64;225 64 64;180 64 64;135 64 64;90 64 64;45 64 64"
+              />,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "cx": "16",
+                "cy": "64",
+                "fill": "#ffffff",
+                "fillOpacity": "1",
+                "r": "16",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "circle",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "cx": "16",
+                "cy": "64",
+                "fill": "#ffffff",
+                "fillOpacity": "1",
+                "r": "14.344",
+                "transform": "rotate(45 64 64)",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "circle",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "cx": "16",
+                "cy": "64",
+                "fill": "#ffffff",
+                "fillOpacity": "1",
+                "r": "12.531",
+                "transform": "rotate(90 64 64)",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "circle",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "cx": "16",
+                "cy": "64",
+                "fill": "#ffffff",
+                "fillOpacity": "1",
+                "r": "10.75",
+                "transform": "rotate(135 64 64)",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "circle",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "cx": "16",
+                "cy": "64",
+                "fill": "#ffffff",
+                "fillOpacity": "1",
+                "r": "10.063",
+                "transform": "rotate(180 64 64)",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "circle",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "cx": "16",
+                "cy": "64",
+                "fill": "#ffffff",
+                "fillOpacity": "1",
+                "r": "8.063",
+                "transform": "rotate(225 64 64)",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "circle",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "cx": "16",
+                "cy": "64",
+                "fill": "#ffffff",
+                "fillOpacity": "1",
+                "r": "6.438",
+                "transform": "rotate(270 64 64)",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "circle",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "cx": "16",
+                "cy": "64",
+                "fill": "#ffffff",
+                "fillOpacity": "1",
+                "r": "5.375",
+                "transform": "rotate(315 64 64)",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "circle",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "attributeName": "transform",
+                "calcMode": "discrete",
+                "dur": "720ms",
+                "repeatCount": "indefinite",
+                "type": "rotate",
+                "values": "0 64 64;315 64 64;270 64 64;225 64 64;180 64 64;135 64 64;90 64 64;45 64 64",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "animateTransform",
+            },
+          ],
+          "type": "g",
+        },
+      ],
+      "type": "svg",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

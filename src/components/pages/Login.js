@@ -93,7 +93,7 @@ LoginPage.propTypes = {
   authentication: PropTypes.func
 }
 
-const mapSTP = (state) => ({
+export const mapSTP = (state) => ({
   isAuthenticated: state.get("authenticationInfo").get("isAuthenticated")
 });
 
