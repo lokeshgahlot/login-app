@@ -6,4 +6,5 @@ dest/
 public/
 npm-debug.log
 junit.xml
+setup-tests/test-artifacts/
 */**/npm-debug.log

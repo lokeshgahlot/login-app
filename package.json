@@ -69,7 +69,9 @@
     },
     "collectCoverageFrom": [
       "**/*.{js,jsx}",
-      "!**/node_modules/**"
+      "!**/node_modules/**",
+      "!<rootDir>/setup-tests/test-artifacts/**",
+      "!<rootDir>/utils/fakeFetch.js"
     ],
     "coverageDirectory": "<rootDir>/setup-tests/test-artifacts"
   }
