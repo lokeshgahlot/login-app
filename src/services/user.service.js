@@ -1,5 +1,7 @@
 import {store} from "../store";
 
+const apiHost = "";
+
 export const handleResponse = response => 
   response.json().then(data => {
     if (!response.ok) {
@@ -11,7 +13,7 @@ export const handleResponse = response =>
 
 // register service
 export const register = user => 
-  fetch("/users/register", {
+  fetch(`${apiHost}/users/register`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(user)
@@ -19,7 +21,7 @@ export const register = user =>
 
 // authentication service
 export const authentication = user => 
-  fetch("/users/authenticate", {
+  fetch(`${apiHost}/users/authenticate`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(user)
@@ -28,11 +30,11 @@ export const authentication = user =>
 
 // getUser service
 export const getUser = userId => {
-  return fetch(`/user/${userId}`, {
+  return fetch(`${apiHost}/user/${userId}`, {
     method: "GET",
     headers: {
       "Content-Type": "application/json",
-      "Authorization": store.getState().get("authenticationInfo").get("token")
+      "Authorization": store.getState().get("authenticationInfo").get("token") // jwt token
     }
   })
     .then(handleResponse); 

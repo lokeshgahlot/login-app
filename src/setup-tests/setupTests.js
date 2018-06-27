@@ -1,4 +1,4 @@
-// setup file
+// setup enzyme 
 import { configure } from "enzyme";
 import Adapter from "enzyme-adapter-react-16";
 

@@ -16,6 +16,7 @@ export default _ => {
           <Route path="/" exact render = {_ => <Redirect to="/login"/>} />
           <Route path="/login" component={LoginPage} />
           <Route path="/sign-up" component={RegistrationPage} />
+          {/* Restricted route*/}
           <PrivateRoute path="/greeting" component = {GreetingPage}/> 
         </WithAlert>
       </App>

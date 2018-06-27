@@ -1,7 +1,9 @@
+// Generate unique id 
 import uuid from "uuid-v4";
 
 // Read registered users from local storage
 const LOCAL_STORAGE_KEY = "login-demo-app-users";
+//Using json web token concept
 const TOKEN = "jwt-fake-token";
 
 const users = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY)) || {};
@@ -14,7 +16,7 @@ const save = users => {
 };
 
 const originalFetch = window.fetch;
-// Fake fetch
+// Fake fetch polyfill
 window.fetch = (url, options) => new Promise((resolve, reject) => {
   const {method, body, headers} = options;
   const randomTime = Math.floor(500 * Math.random());
@@ -48,7 +50,7 @@ window.fetch = (url, options) => new Promise((resolve, reject) => {
       return reject("Username or password is incorrect");
     }
 
-    // get user
+    // get user (e.g. /user/abcd-1234)
     const regex = /\/user\/([A-Z0-9a-z-]+)$/;
     if (regex.test(url) && method === "GET") {
       const id = url.match(regex)[1];
@@ -66,7 +68,7 @@ window.fetch = (url, options) => new Promise((resolve, reject) => {
       return reject("User doesn't exist.");
     }
 
-    //default 
+    // default 
     return originalFetch(url, options);
   }, randomTime);
 
